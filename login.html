@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid h-100" id="loginpage">
+        <div class="row h-100 justify-content-center align-items-center">
+            <form class="col-md-12  p-0 m-0">
+                <div class="AppForm shadow-lg  p-0 m-0">
+                    <div class="row  p-0 m-0">
+                        <div class="col-md-5  d-flex justify-content-center align-items-center">
+                            <div class="AppFormLeft p-0 m-0">
+
+                                <h1><img src="https://espn.wonderwins.com/assets/images/logo.png" alt=""></h1>
+                                <div class="form-group position-relative mb-4">
+                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 rounded-0 shadow-none" id="login-username"
+                                        placeholder="Username">
+                                        <i class="fa fa-user-o"></i>
+                                </div>
+                                <div class="form-group position-relative mb-4">
+                                    <input type="password" class="form-control border-top-0 border-right-0 border-left-0 rounded-0 shadow-none" id="login-password"
+                                        placeholder="Password">
+                                        <i class="fa fa-key"></i>
+
+                                </div>
+                                <div class="row  mt-4 mb-4">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <a href="#">Forgot Password?</a>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-success btn-block shadow border-0 py-2 text-uppercase " onclick="Login(event)">
+                                    Login
+                                </button>
+
+                                <p class="text-center mt-5">
+                                    Don't have an account?
+                                    <span id="login">
+                                        Create your account
+                                    </span>
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-7 p-0">
+                            <div class="AppFormRight position-relative d-flex justify-content-center flex-column align-items-center text-center p-5 text-white">
+                                <h2 class="position-relative px-4 pb-3 mb-4"><img src="https://espn.wonderwins.com/assets/images/main_logo.png" alt=""></h2>
+                                <h1>INDIA'S COOLEST FANTASY PLATFORM</h1>
+                                <h4>
+                                    Download the App</h4>
+                                    <div class="appslogo">
+                                        <div><img src="https://espn.wonderwins.com/assets/images/android_icon.png" alt=""></div>
+                                        <div><img src="https://espn.wonderwins.com/assets/images/ios_icon.png" alt=""></div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="container-fluid h-100"   id="signuppage" style="display: none;">
+        <div class="row h-100 justify-content-center align-items-center">
+            <form class="col-md-12  p-0 m-0">
+                <div class="AppForm shadow-lg  p-0 m-0">
+                    <div class="row  p-0 m-0">
+                        <div class="col-md-5  d-flex justify-content-center align-items-center">
+                            <div class="AppFormLeft p-0 m-0">
+
+                                <h1><img src="https://espn.wonderwins.com/assets/images/logo.png" alt=""></h1>
+                                <div class="form-group position-relative mb-4">
+                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 rounded-0 shadow-none" 
+                                        placeholder="Full Name" id="name">
+                                        <i class="fa fa-user-o"></i>
+                                </div>
+                                <div class="form-group position-relative mb-4">
+                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 rounded-0 shadow-none" 
+                                        placeholder="Email" id="email">
+                                        <i class="fa fa-user-o"></i>
+                                </div>
+                                <div class="form-group position-relative mb-4">
+                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 rounded-0 shadow-none" 
+                                        placeholder="Username" id="username">
+                                        <i class="fa fa-user-o"></i>
+                                </div>
+                                <div class="form-group position-relative mb-4">
+                                    <input type="password" class="form-control border-top-0 border-right-0 border-left-0 rounded-0 shadow-none" id="password"
+                                        placeholder="Password">
+                                        <i class="fa fa-key"></i>
+
+                                </div>
+                                <div class="form-group position-relative mb-4">
+                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 rounded-0 shadow-none" 
+                                        placeholder="Phone" id="mobile">
+                                        <i class="fa fa-user-o"></i>
+                                </div>
+                                <div class="form-group position-relative mb-4">
+                                    <input type="text" class="form-control border-top-0 border-right-0 border-left-0 rounded-0 shadow-none" 
+                                        placeholder="Description" id="description">
+                                        <i class="fa fa-user-o"></i>
+                                </div>
+                               
+                                <div class="row  mt-4 mb-4">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <a href="#">Forgot Password?</a>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-success btn-block shadow border-0 py-2 text-uppercase " id="signpageBtn" onclick="Add(event)">
+                                   sign
+                                </button>
+
+                                <p class="text-center mt-5">
+                                    Don't have an account?
+                                    <span id="signpage">
+                                       login
+                                    </span>
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-7 p-0">
+                            <div class="AppFormRight position-relative d-flex justify-content-center flex-column align-items-center text-center p-5 text-white">
+                                <h2 class="position-relative px-4 pb-3 mb-4"><img src="https://espn.wonderwins.com/assets/images/main_logo.png" alt=""></h2>
+                                <h1>INDIA'S COOLEST FANTASY PLATFORM</h1>
+                                <h4>
+                                    Download the App</h4>
+                                    <div class="appslogo">
+                                        <div><img src="https://espn.wonderwins.com/assets/images/android_icon.png" alt=""></div>
+                                        <div><img src="https://espn.wonderwins.com/assets/images/ios_icon.png" alt=""></div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
+<script>
+    let arr=JSON.parse(localStorage.getItem("userData"))||[]
+    // let arr=JSON.parse(localStorage.getItem("dataUser"))||[]
+ let x = document.getElementById('login')
+ x.addEventListener("click",()=>{
+let y=document.getElementById('signuppage')
+y.style.display="block"
+let z=document.getElementById('loginpage')
+z.style.display="none"
+ })
+ let a = document.getElementById('signpage')
+ a.addEventListener("click",()=>{
+let y=document.getElementById('signuppage')
+y.style.display="none"
+let z=document.getElementById('loginpage')
+z.style.display="block"
+ })
+ function getInputValue(id) {
+    let value1 = document.getElementById(id).value;
+    return value1;
+  }
+
+
+ 
+function User(n, e, u, p, m, d){
+this.name=n;
+this.email=e;
+this.username=u;
+this.password=p;
+this.mobile=m;
+this.description=d;
+}
+
+
+function Add(event){
+
+    const name = getInputValue("name");
+    const email = getInputValue("email");
+    const password = getInputValue("password");
+    const username = getInputValue("username");
+    const mobile = getInputValue("mobile");
+    const description = getInputValue("description");
+
+let objs=new User(name,email,username,password,mobile,description)
+
+if(name==""||email==""||username==""||password==""||mobile==""||description==""){
+    event.preventDefault()
+    alert("You missed some credential")
+}else{
+   
+
+    alert("Registrated sucessfully!!")
+    let a = document.getElementById('signpageBtn')
+ a.addEventListener("click",()=>{
+let y=document.getElementById('signuppage')
+y.style.display="none"
+let z=document.getElementById('loginpage')
+z.style.display="block"})
+
+     arr.push(objs)
+     localStorage.setItem("userData",JSON.stringify(arr))
+}
+
+
+//   localStorage.setItem("dataUser",JSON.stringify(arr))
+
+}
+function Login(event){
+    event.preventDefault()
+    const username=document.getElementById("login-username").value;
+        const password=document.getElementById("login-password").value;
+        if(username==""||password==""){
+            alert("check your credential")
+        }else{
+           
+            let check=false
+   arr.forEach(function(e) {
+     x = e.username
+     y =e.password
+     if(x==username ){
+        if(y==password){
+            check=true  
+ return false
+        }
+    }
+   
+   });    
+   if(check){
+        document.location.href="index.html"
+        alert("login successfully !!")
+    
+   }
+   else{
+        alert("Please check your details!!")
+    }
+
+        }
+}
+
+
+// class User{
+//     constructor(){
+//     }
+//     #checkUserName(username){
+// let value=username.includes('#')?false:true;
+// return value
+// }
+// #checkPassword(password){
+//     let value=password.length>8?true:false;
+//     return value
+// }
+
+// async SignUp(n,e,u,p,m,d){
+//     let isValidated = this.#checkUserName(u) && this.#checkPassword(p);
+// if(isValidated){
+// this.name=n;
+// this.email=e;
+// this.username=u;
+// this.password=p;
+// this.mobile=m;
+// this.description=d;
+// let actual_data=JSON.stringify(this)
+// // console.log(actual_data)
+
+//         try {
+           
+//             let res= await fetch(`https://masai-api-mocker.herokuapp.com/auth/register`,{
+//             method:"POST",
+//             body:actual_data,
+//             headers:{
+//                 "Content-Type":"application/json"
+//             },
+//         })
+//         let data=await res.json();
+//         // /console.log(data)
+       
+//         console.log(data)
+            
+//         } catch (error) {
+//             console.log(error)
+          
+//            return false
+//         }
+
+// }
+
+// }
+
+
+// }
+
+
+// let u1= new User()
+
+
+// function Register(event){
+    
+// event.preventDefault()
+
+// const name=document.getElementById('name').value;
+// const email=document.getElementById('email').value;
+// const username=document.getElementById('username').value;
+// const password=document.getElementById('password').value
+// const mobile=document.getElementById('mobile').value
+// const description=document.getElementById('description').value
+
+// u1.SignUp(name,email,username,password,mobile,description)
+
+// }
+
+ 
+//abha
+// class User{
+//     constructor(){
+//     }
+//     #checkUserName(username){
+//         let value=username.includes("#") ? false:true;
+//         return value;
+//     }
+//     #checkPassword(password){
+//         let value= password.length>8 ? true:false;
+//         return value;
+//     }
+//     async Signup(n,e,u,p,m,d){
+//      let isValidated=this.#checkUserName(u) && this.#checkPassword(p);
+//     //if user validated store data in ES6 class object
+//      if(isValidated){
+//         this.name=n;
+//         this.email=e;
+//         this.username=u;
+//         this.password=p;
+//         this.mobile=m;
+//         this.description=d;
+//         let acutal_data=JSON.stringify(this)
+//         //send it to server
+//      try{
+//         let res= await fetch(`https://masai-api-mocker.herokuapp.com/auth/register`,{
+//             method:"POST",
+//             body:acutal_data,
+//             headers:{
+//                 "Content-Type":"application/json"
+//             },
+//         })
+//         let data=await res.json();
+//         //console.log(data)
+//         alert("User registered sucessfully!")
+//      }catch(err){
+//           console.log(err)
+//      }
+//      }
+//     }
+//     async Login(u,p){
+//         this.username=u;
+//         this.password=p;
+//         let login_data=JSON.stringify(this)
+//         try{
+//             let res=await fetch(`https://masai-api-mocker.herokuapp.com/auth/login`,{
+//                 method:"POST",
+//             body:login_data,
+//             headers:{
+//                 "Content-Type":"application/json"
+//             }
+//             })
+//             let data=await res.json();
+//                // alert("User Login sucessfully!")
+//         console.log(data)
+//         }catch(err){
+//             console.log(err)
+//         }
+//     }
+// }
+//  let u1=new User();
+//  let u2=new User()
+// //console.log(u2)
+// function Register(event){
+//     event.preventDefault()
+//   const name=document.getElementById("name").value;
+//   const email=document.getElementById("email").value;
+//   const username=document.getElementById("username").value;
+//   const password=document.getElementById("password").value;
+//   const mobile=document.getElementById("mobile").value;
+//   const description=document.getElementById("description").value;
+// if(name==""||email==""||username==""||password==""||mobile==""||description==""){
+//     alert("You missed some credential")
+// }else{
+//     u1.Signup(name,email,username,password,mobile,description);
+//     alert("Registrated sucessfully!!")
+// }
+// }
+// function Login(){
+//     event.preventDefault()
+//         const username=document.getElementById("login-username").value;
+//         const password=document.getElementById("login-password").value;
+//         if(username==""||password==""){
+//             alert("check your credential")
+//         }else{
+//             u2.Login(username,password)
+//         }
+// }
+</script>

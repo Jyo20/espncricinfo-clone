@@ -1,0 +1,164 @@
+#lower {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: #15b0f8;
+  height: 65px;
+}
+#lower > img {
+  margin: 0 10px;
+  width: 200px;
+}
+/* lower dropdown function  */
+
+* {
+  /* margin: 14px; */
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.menu-area a {
+  display: flex;
+  color: #fff;
+  height: 40px;
+  text-decoration: none;
+  width: 100%;
+}
+.dropdown a {
+  display: flex;
+  margin: auto;
+  background: #fff;
+  height: 40px;
+  text-decoration: none;
+  max-width: 200px;
+  width: 100%;
+  margin-right: 70px;
+  color: black;
+}
+.menu-area a:hover {
+  background: skyblue;
+  color: #fff;
+}
+.menu-area > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.menu-area li {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.menu-area > ul > li > a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 70px;
+}
+.menu-area li:hover .dropdown > ul > li {
+  top: 0;
+  display: block;
+}
+.dropdown li {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+.dropdown {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.menu-area li:hover .dropdown {
+  padding: 20px;
+  width: 200%;
+}
+
+/* second nav */
+
+#fast {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: -5px;
+}
+#fast:hover,
+#edi:hover {
+  background-color: #0f97d6;
+}
+#fast > img {
+  width: 20px;
+  margin-right: 6px;
+  height: 25px;
+}
+#linew {
+  margin-left: 10%;
+  color: #fff;
+  display: flex;
+}
+
+#edi {
+  margin: auto;
+  padding: 6px;
+  margin: 0 5px;
+}
+.col {
+  display: flex;
+}
+.col > div > img {
+  width: 25px;
+  height: auto;
+
+  margin: 0 10px;
+}
+.col > div {
+  padding: 5px;
+}
+.col > div:hover {
+  background-color: #0f97d6;
+}
+
+/* sticky navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+

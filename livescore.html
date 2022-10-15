@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./navfile/smnav.css" />
+    
+    <title>Document</title>
+    <style>
+      /* * {
+        font-family: sans-serif;
+      } */
+      #page1 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "a a a b";
+        padding: 15px 40px;
+      }
+      #addata > img{
+        width: 400%;
+      }
+      #fnav {
+        display: flex;
+        padding: 5px;
+        border: 1px solid rgb(230, 230, 230);
+        border-radius: 6px;
+        grid-area: "a";
+        width: 100%;
+      }
+      #fnav > p {
+        width: 300px;
+        padding: 5px;
+        margin: auto;
+        margin-right: 1px;
+        text-align: center;
+      }
+      #fnav > p:first-child {
+        border-bottom: 3px solid blue;
+      }
+      /* #fnav > p:hover {
+        border-bottom: 3px solid green;
+      } */
+
+      #addata {
+        height: 700px;
+        grid-area: "b";
+        margin-left: 30px;
+      }
+      #ssdiv {
+        display: flex;
+        padding: 5px;
+        margin-top: 10px;
+      }
+      #ssdiv > p {
+        padding: 3px;
+        border: 1px solid rgb(218, 218, 218);
+        margin: auto;
+        border-radius: 5px;
+      }
+      #ssdiv > p:first-child {
+        font-weight: bold;
+        border: none;
+        border-right: 2px solid gray;
+        border-radius: 0;
+        padding-right: 9px;
+      }
+      .top1 > p:first-child {
+        color: red;
+        font-size: 11px;
+        margin: 0;
+      }
+      .top1 > p:last-child {
+        font-size: 12px;
+        margin: 1px 0;
+      }
+      .maindata {
+        display: flex;
+        font-size: 14px;
+        font-weight: bold;
+        margin: -9px -13px;
+      }
+      .maindata > img {
+        width: 25px;
+        height: 20px;
+        margin: auto 5px;
+        margin-left: 15px;
+      }
+      .maindata > div {
+        display: flex;
+        margin: auto;
+        margin-right: 20px;
+        justify-content: center;
+        text-align: center;
+      }
+      .maindata > div > p:first-child {
+        font-weight: bold;
+      }
+      .que {
+        font-size: 13px;
+        margin: -7px 0;
+      }
+      hr {
+        margin: -7px 0;
+      }
+      .lastf {
+        display: flex;
+        font-size: 14px;
+        margin: 0;
+      }
+      .lastf > p {
+        margin-right: 10px;
+      }
+      .md1 {
+        display: flex;
+      }
+      .md1 > div > div {
+        border: 0.4px solid rgb(230, 230, 230);
+        padding: 10px;
+      }
+
+      .md2 {
+        border: 0.2px solid rgb(230, 230, 230);
+        border-radius: 15px;
+      }
+      .md3 {
+        border: 0.2px solid rgb(230, 230, 230);
+        margin-top: 30px;
+        border-radius: 15px;
+      }
+      .md3 > h4 {
+        margin-left: 10px;
+      }
+      .md2 > h4 {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="hrader-js">
+
+    </header>
+    <div id="page1">
+      <div id="ndata">
+        <div id="fnav">
+          <p>Live</p>
+          <p>Upcoming</p>
+          <p>Result</p>
+        </div>
+        <div id="ssdiv">
+          <p>Reset</p>
+          <p>Int’l</p>
+          <p>T20s</p>
+          <p>ODI</p>
+          <p>Test</p>
+          <p>Men</p>
+          <p>Women</p>
+          <p>Domestic</p>
+          <p>FC</p>
+          <p>Youth</p>
+          <p>List A</p>
+          <p>Others</p>
+        </div>
+        <div class="md2">
+          <h4>Top Event</h4>
+          <div class="md1">
+            <div>
+              <div>
+                <div class="top1">
+                  <p>LIVE</p>
+                  <p>
+                    2nd T20I, North Sound, October 01, 2022, New Zealand Women
+                    tour of West Indies
+                  </p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/317600/317615.png"
+                    alt=""
+                  />
+                  <p>West Indies Women</p>
+                  <div>
+                    <p>169/6</p>
+                    <p>(0.1/20 ov) 0/0</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/340500/340505.png"
+                    alt=""
+                  />
+                  <p>New Zealand Women</p>
+                </div>
+
+                <div class="que">
+                  <p>NZ Women chose to field.</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Series</p>
+                  <p>Home</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>STUMPS</p>
+                  <p>Rajkot, October 01 - 05, 2022, Irani Trophy</p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313300/313316.logo.png"
+                    alt=""
+                  />
+                  <p>Saurashtra</p>
+                  <div>
+                    <p></p>
+                    <p>98</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/346800/346818.png"
+                    alt=""
+                  />
+                  <p>Rest Of India</p>
+                  <div>
+                    <p>(49 ov)</p>
+                    <p>205/3</p>
+                  </div>
+                </div>
+
+                <div class="que">
+                  <p>Day 1 - Rest of Ind lead by 107 runs.</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Series</p>
+                  <p>Home</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>LIVE</p>
+                  <p>
+                    12th Match (N), Jodhpur, October 01, 2022, Legends League
+                    Cricket
+                  </p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/345900/345971.png"
+                    alt=""
+                  />
+                  <p>India Capitals</p>
+                  <div>
+                    <p>(8.3/20 ov)</p>
+                    <p>70/1</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/345900/345973.png"
+                    alt=""
+                  />
+                  <p>Manipal Tigers</p>
+                </div>
+
+                <div class="que">
+                  <p>Tigers chose to field.</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Series</p>
+                  <p>Home</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>RESULT</p>
+                  <p>6th Match, Perth, October 01, 2022, The Marsh Cup</p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313200/313227.logo.png"
+                    alt=""
+                  />
+                  <p>New South Wales</p>
+                  <div>
+                    <p></p>
+                    <p>76</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313200/313237.logo.png"
+                    alt=""
+                  />
+                  <p>Western Australia</p>
+                  <div>
+                    <p>(17/50 ov, T:77)</p>
+                    <p>77/1</p>
+                  </div>
+                </div>
+
+                <div class="que">
+                  <p>West Aust won by 9 wickets (with 198 balls remaining)</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Report</p>
+                  <p>Photos</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>RESULT</p>
+                  <p>1st Match, Sylhet, October 01, 2022, Women's Asia Cup</p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313400/313402.logo.png"
+                    alt=""
+                  />
+                  <p>Thailand Women</p>
+                  <div>
+                    <p></p>
+                    <p>82</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/341400/341456.png"
+                    alt=""
+                  />
+                  <p>Bangladesh Women</p>
+                  <div>
+                    <p>(11.4/20 ov, T:83)</p>
+                    <p>88/1</p>
+                  </div>
+                </div>
+
+                <div class="que">
+                  <p>Bdesh Wmn won by 9 wickets (with 50 balls remaining)</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Photos</p>
+                  <p>Home</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="top1">
+                  <p>RESULT</p>
+                  <p>2nd Match, Sylhet, October 01, 2022, Women's Asia Cup</p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313300/313309.logo.png"
+                    alt=""
+                  />
+                  <p>India Women</p>
+                  <div>
+                    <p></p>
+                    <p>150/6</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/340000/340047.png"
+                    alt=""
+                  />
+                  <p>Sri Lanka Women</p>
+                  <div>
+                    <p>(18.2/20 ov, T:151)</p>
+                    <p>109</p>
+                  </div>
+                </div>
+
+                <div class="que">
+                  <p>IND Women won by 41 runs</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Report</p>
+                  <p>Photos</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>LIVE</p>
+                  <p>
+                    Final (N), Raipur, October 01, 2022, Road Safety World
+                    Series
+                  </p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/317600/317655.jpg"
+                    alt=""
+                  />
+                  <p>India Legends</p>
+                  <div>
+                    <p>(5/20 ov)</p>
+                    <p>37/2</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/317500/317573.png"
+                    alt=""
+                  />
+                  <p>Sri Lanka Legends</p>
+                </div>
+
+                <div class="que">
+                  <p>IND Legends chose to bat.</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Series</p>
+                  <p>Home</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>RESULT</p>
+                  <p>
+                    Final (N), Providence, September 30, 2022, Caribbean Premier
+                    League
+                  </p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/325900/325974.png"
+                    alt=""
+                  />
+                  <p>Barbados Royals</p>
+                  <div>
+                    <p></p>
+                    <p>161/7</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313400/313483.logo.png"
+                    alt=""
+                  />
+                  <p>Jamaica Tallawahs</p>
+                  <div>
+                    <p>(16.1/20 ov, T:162)</p>
+                    <p>162/2</p>
+                  </div>
+                </div>
+
+                <div class="que">
+                  <p>Tallawahs won by 8 wickets (with 23 balls remaining)</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Report</p>
+                  <p>Photos</p>
+                  <p>Videos</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>RESULT</p>
+                  <p>
+                    6th T20I (N), Lahore, September 30, 2022, England tour of
+                    Pakistan
+                  </p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313100/313129.logo.png"
+                    alt=""
+                  />
+                  <p>Pakistan</p>
+                  <div>
+                    <p></p>
+                    <p>169/6</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313100/313114.logo.png"
+                    alt=""
+                  />
+                  <p>New Zealand Women</p>
+                  <div>
+                    <p>(14.3/20 ov, T:170)</p>
+                    <p>170/2</p>
+                  </div>
+                </div>
+
+                <div class="que">
+                  <p>England won by 8 wickets (with 33 balls remaining)</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Report</p>
+                  <p>Photos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md3">
+          <h4>Major League Tournament</h4>
+          <div class="md1">
+            <div>
+              <div>
+                <div class="top1">
+                  <p>STUMPS</p>
+                  <p>
+                    Group B, Panagoda, September 30 - October 02, 2022, Major
+                    League Tournament
+                  </p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/318300/318369.png"
+                    alt=""
+                  />
+                  <p>Sri Lanka Army Sports Club</p>
+                  <div>
+                    <p></p>
+                    <p>215</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/336000/336023.jpg"
+                    alt=""
+                  />
+                  <p>Negombo Cricket Club</p>
+                  <div>
+                    <p>(9 ov)</p>
+                    <p>25/1</p>
+                  </div>
+                </div>
+
+                <div class="que">
+                  <p>Day 2 - Negombo trail by 190 runs.</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Series</p>
+                  <p>Home</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>STUMPS</p>
+                  <p>Rajkot, October 01 - 05, 2022, Irani Trophy</p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313300/313316.logo.png"
+                    alt=""
+                  />
+                  <p>Saurashtra</p>
+                  <div>
+                    <p></p>
+                    <p>98</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/346800/346818.png"
+                    alt=""
+                  />
+                  <p>Rest Of India</p>
+                  <div>
+                    <p>(49 ov)</p>
+                    <p>205/3</p>
+                  </div>
+                </div>
+
+                <div class="que">
+                  <p>Day 1 - Rest of Ind lead by 107 runs.</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Series</p>
+                  <p>Home</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>STUMPS</p>
+                  <p>
+                    12th Match (N), Jodhpur, October 01, 2022, Legends League
+                    Cricket
+                  </p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/345900/345971.png"
+                    alt=""
+                  />
+                  <p>India Capitals</p>
+                  <div>
+                    <p>(8.3/20 ov)</p>
+                    <p>70/1</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/345900/345973.png"
+                    alt=""
+                  />
+                  <p>Manipal Tigers</p>
+                </div>
+
+                <div class="que">
+                  <p>Tigers chose to field.</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Series</p>
+                  <p>Home</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>STUMPS</p>
+                  <p>6th Match, Perth, October 01, 2022, The Marsh Cup</p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313200/313227.logo.png"
+                    alt=""
+                  />
+                  <p>New South Wales</p>
+                  <div>
+                    <p></p>
+                    <p>76</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313200/313237.logo.png"
+                    alt=""
+                  />
+                  <p>Western Australia</p>
+                  <div>
+                    <p>(17/50 ov, T:77)</p>
+                    <p>77/1</p>
+                  </div>
+                </div>
+
+                <div class="que">
+                  <p>West Aust won by 9 wickets (with 198 balls remaining)</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Report</p>
+                  <p>Photos</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>STUMPS</p>
+                  <p>1st Match, Sylhet, October 01, 2022, Women's Asia Cup</p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313400/313402.logo.png"
+                    alt=""
+                  />
+                  <p>Thailand Women</p>
+                  <div>
+                    <p></p>
+                    <p>82</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/341400/341456.png"
+                    alt=""
+                  />
+                  <p>Bangladesh Women</p>
+                  <div>
+                    <p>(11.4/20 ov, T:83)</p>
+                    <p>88/1</p>
+                  </div>
+                </div>
+
+                <div class="que">
+                  <p>Bdesh Wmn won by 9 wickets (with 50 balls remaining)</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Photos</p>
+                  <p>Home</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div class="top1">
+                  <p>STUMPS</p>
+                  <p>
+                    Group B, Colombo (RPS), September 30 - October 02, 2022,
+                    Major League Tournament
+                  </p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313300/313309.logo.png"
+                    alt=""
+                  />
+                  <p>Chilaw</p>
+                  <div>
+                    <p>(78.3 ov)</p>
+                    <p>191 & 285/7</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/340000/340047.png"
+                    alt=""
+                  />
+                  <p>Tamil Union</p>
+                  <div>
+                    <p></p>
+                    <p>155</p>
+                  </div>
+                </div>
+
+                <div class="que">
+                  <p>
+                    Chilaw Flag Tamil Union Flag Day 2 - Chilaw lead by 321
+                    runs.
+                  </p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Series</p>
+                  <p>Home</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>STUMPS</p>
+                  <p>
+                    Final (N), Raipur, October 01, 2022, Road Safety World
+                    Series
+                  </p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/317600/317655.jpg"
+                    alt=""
+                  />
+                  <p>India Legends</p>
+                  <div>
+                    <p>(5/20 ov)</p>
+                    <p>37/2</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/317500/317573.png"
+                    alt=""
+                  />
+                  <p>Sri Lanka Legends</p>
+                </div>
+
+                <div class="que">
+                  <p>IND Legends chose to bat.</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Series</p>
+                  <p>Home</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>STUMPS</p>
+                  <p>
+                    Final (N), Providence, September 30, 2022, Caribbean Premier
+                    League
+                  </p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/325900/325974.png"
+                    alt=""
+                  />
+                  <p>Barbados Royals</p>
+                  <div>
+                    <p></p>
+                    <p>161/7</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313400/313483.logo.png"
+                    alt=""
+                  />
+                  <p>Jamaica Tallawahs</p>
+                  <div>
+                    <p>(16.1/20 ov, T:162)</p>
+                    <p>162/2</p>
+                  </div>
+                </div>
+
+                <div class="que">
+                  <p>Tallawahs won by 8 wickets (with 23 balls remaining)</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Report</p>
+                  <p>Photos</p>
+                  <p>Videos</p>
+                </div>
+              </div>
+              <div>
+                <div class="top1">
+                  <p>STUMPS</p>
+                  <p>
+                    6th T20I (N), Lahore, September 30, 2022, England tour of
+                    Pakistan
+                  </p>
+                </div>
+
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313100/313129.logo.png"
+                    alt=""
+                  />
+                  <p>Pakistan</p>
+                  <div>
+                    <p></p>
+                    <p>169/6</p>
+                  </div>
+                </div>
+                <div class="maindata">
+                  <img
+                    src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313100/313114.logo.png"
+                    alt=""
+                  />
+                  <p>New Zealand Women</p>
+                  <div>
+                    <p>(14.3/20 ov, T:170)</p>
+                    <p>170/2</p>
+                  </div>
+                </div>
+
+                <div class="que">
+                  <p>England won by 8 wickets (with 33 balls remaining)</p>
+                </div>
+                <hr />
+                <div class="lastf">
+                  <p>Report</p>
+                  <p>Photos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="addata">
+        <img src="https://blog.crictez.com/wp-content/uploads/2021/10/Cricket-match-video.gif" alt="Ads" />
+        <img src="https://i.gifer.com/7FLd.gif" alt="Ads" />
+        <img src="https://farm6.staticflickr.com/5210/14003824662_77a06e83db_o.gif" alt="Ads" />
+        <img src="https://c.tenor.com/LtIKK5OiGzYAAAAd/cricket-catch-catch-ball.gif" alt="Ads" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfKCcXGchwHL-M-AfTEXDyAJ3wWDdRW-wgGg&usqp=CAU" alt="Ads" />
+        <img src="https://im.indiatimes.in/media/content/2015/Mar/davidmiller_1426772356.gif?w=32&h=21&cc=1&q=75" alt="Ads" />
+        <img src="https://media.kulfyapp.com/36N7ZT/36N7ZT-shared.gif" alt="Ads" />
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module">
+  import { smnavbar } from "./navfile/smnavbar.js";
+  document.getElementById("hrader-js").innerHTML = smnavbar();
+  import { footer } from "./components/footer.js";
+  document.getElementById("footer").innerHTML = footer();
+</script>
